@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            color: red;
+        }
+    </style>
+    <!-- 这是后代选择器，表示只要是ul下面的li标签都会生效 -->
+</head>
+<body>
+    <ul>
+        <li>列表1</li>
+        <li>列表2</li>
+        <li>列表3</li>
+        <div>
+            <ol>
+                <li>列表4</li>
+                <li>列表5</li>
+                <li>列表6</li>
+                <!-- 上面三个li标签都会生效 -->
+            </ol>
+        </div>
+    </ul>
+</body>
+</html>

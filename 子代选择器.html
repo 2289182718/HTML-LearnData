@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>p{
+            color: red;
+        }
+        /* 上面是一个子代选择器，所以li标签里面的p标签不会生效，只有div下面一级的2个p标签会失效 */
+    </style>
+</head>
+<body>
+    <div>
+        <p>p标签一</p>
+        <ul>
+            <li>列表1</li>
+            <li>列表2</li>
+            <li>列表3</li>
+            <li>
+                <p>p标签三</p>
+            </li>
+        </ul>
+        <p>p标签二</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器二</title>
+    <style>
+        p,h3{
+            color: forestgreen;
+            font-size: 30px;
+        }
+        /* 上面是一个合并选择器 */
+        .a,.b{
+            color: darkmagenta;
+            font-size: 50px;
+        }
+        /* 上面是一个针对class的合并选择器 */
+        #abcd{
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h3>h3标签</h3>
+    <p>P标签</p>
+    <h4 class="a">H4标签</h4>
+    <h5 class="b">H5标签</h5>
+    <!-- 下面是一个ID选择器 -->
+    <h6 id="abcd">H6标签</h6>
+    <!-- 注意ID选择器只能用一次 -->
+</body>
+</html>
