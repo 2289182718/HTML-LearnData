@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: skyblue;
+            left: 20px;
+            top:20px
+            /* position:absolute;表示绝对定位，会出现浮动，因为是以浏览器左上角我原点的绝对定位 */
+            /* 而相对定位没有脱离文档流，也就是说，当左上角有其他元素时，被相对定位的元素的左下角为原点来定位 */
+        }
+        .box2{
+            width: 150px;
+            height: 150px;
+            background-color: #666;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            /* 此时box3会出现在顶层，div设可以无限多个层， */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
