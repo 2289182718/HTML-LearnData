@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 400px;
+            background-color: #555;
+            display: flex;
+            /* display: flex此时表示该盒子变为一个弹性盒子 */
+            flex-direction: row;
+            /* 此时将弹性盒子里三个方块水平摆放（默认也是水平） */
+            justify-content: center;
+            /* 此时三个方块在y轴中间 */
+            align-items: center;
+            /* 此时三个方块在x轴中间 */
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            flex: 1;
+            /* flex表示所占权重，由于是水平摆放，所以会影响方块宽度，下面一样 */
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            flex: 2;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            flex: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
