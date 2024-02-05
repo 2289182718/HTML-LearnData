@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            width: 250px;
+            height: 250px;
+            background-color: #666;
+        }
+        /* 当大盒子里的小盒子装不下时，多的小盒子会被挤到下一行 */
+        div{
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .box1{
+            background-color:  red;
+        }
+        .box2{
+            background-color: blue;
+        }
+        .box3{
+            background-color: green;
+        }
+        ul li{
+            float: left;
+            margin: 0 20px;
+            /* 外边距：margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <ul>
+        <li>导航</li>
+        <li>导航</li>
+        <li>导航</li>
+        <li>导航</li>
+    </ul>
+</body>
+</html>
